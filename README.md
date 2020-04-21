@@ -34,6 +34,7 @@ Things you may want to cover:
 ### Association
 - has_many :groups, through: groups_users
 - has_many :messages
+- has_many :groups_users
 
 
 
@@ -42,7 +43,7 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
+|body|text|
 |image|string|
 |groups_id|integer|null: false, foreign_key: true|
 |users_id|integer|null: false, foreign_key: true|
@@ -58,11 +59,12 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|name|text|null: false|
+|name|string|null: false|
 
 ### Association
 - has_many :users, through: groups_users
 - has_many :messages
+- has_many :groups_users
 
 
 
