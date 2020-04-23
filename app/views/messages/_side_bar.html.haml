@@ -1,3 +1,22 @@
 .side-bar
   .side-bar__header
+    .user-items
+      .user-items__name
+        masa
+      .user-items__icons
+        = link_to "#", class:"edit-icon"do
+          = icon('far','edit')
+          %span<>
+        = link_to "#", class:"cog-icon"do
+          = icon('fas','cog')
   .side-bar__groups
+    .group
+      .group__group--name<
+        techcamp
+      .group__group--message-info<
+        まだメッセージがありません
+    .group
+      .group__group--name<
+        weekend 74
+      .group__group--message-info<
+        まだメッセージがありません
