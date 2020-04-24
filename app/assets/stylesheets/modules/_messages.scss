@@ -1,3 +1,15 @@
+// ベーステキストカラー
+$font_color: #ffffff;
+
+// 上下中央揃え
+@mixin position_center{
+  display: flex;
+  align-items: center;
+}
+
+
+
+
 *{
   box-sizing: border-box;
 }
@@ -12,8 +24,7 @@
   height: 100vh;
   &__header{
     height: 100px;
-    display: flex;
-    align-items: center;
+    @include position_center;
     .user-items{
       height: 20px;
       width: 260px;
@@ -23,7 +34,7 @@
       &__name{
         line-height: 20px;
         text-align: left;
-        color: #ffffff;
+        color: $font_color;
         font-size: 16px;
         font-weight: bold;
       }
@@ -32,11 +43,11 @@
         text-align: right;
         line-height: 20px;
         .edit-icon{
-          color: #ffffff;
+          color: $font_color;
           text-decoration: none;
         }
         .cog-icon{
-          color: #ffffff;
+          color: $font_color;
           text-decoration: none;
           margin-left: 5px;
         }
@@ -49,7 +60,7 @@
     padding: 20px;
     .group{
       padding-bottom: 40px;
-      color: #ffffff;
+      color: $font_color;
       &__group--name{
         font-size: 15px;
         margin-bottom: 5px;
@@ -67,8 +78,7 @@
   height: 100vh;
   &__header{
     height: 100px;
-    display: flex;
-    align-items: center;
+    @include position_center;
     justify-content: space-between;
     border-bottom: solid 1px #eee;
     .group-items{
@@ -130,14 +140,12 @@
     padding-right: 40px;
     display: flex;
     .new_message{
-      display: flex;
+      @include position_center;
       justify-content: space-between;
-      align-items: center;
       width: 100%;
       .message-form{
         height: 50px;
-        display: flex;
-        align-items: center;
+        @include position_center;
         width: 100vw;
         position: relative;
         &__input{
@@ -162,7 +170,7 @@
         height: 50px;
         padding: 0 30px;
         background-color: #38aef0;
-        color: white;
+        color: $font_color;
         cursor: pointer;
         margin-left: 15px;
       }
