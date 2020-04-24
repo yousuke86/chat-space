@@ -26,9 +26,10 @@
       .message-items__text
         はじめまして！
   .main-chat__footer
-    .message-form
-      %input.message-form__input{placeholder: "type a message"}
-      %label{class: "message-form__image"}
-        = icon('far','image')
-        %input{type: "file"}
-    %input.send-btn{type: "submit", value: "Send"}
+    %form.new_message
+      .message-form
+        %input.message-form__input{placeholder: "type a message"}
+        %label{class: "message-form__image"}
+          = icon('far','image')
+          %input{type: "file"}
+      %input.send-btn{type: "submit", value: "Send"}
