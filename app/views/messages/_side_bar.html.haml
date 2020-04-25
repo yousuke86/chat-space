@@ -4,7 +4,7 @@
       .user-items__name
         = current_user.name
       .user-items__icons
-        = link_to "#", class:"edit-icon"do
+        = link_to new_group_path, class:"edit-icon"do
           = icon('far','edit')
           %span<>
         = link_to edit_user_path(current_user.id), class:"cog-icon"do
