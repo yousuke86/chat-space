@@ -61,6 +61,10 @@ $font_color: #ffffff;
     .group{
       padding-bottom: 40px;
       color: $font_color;
+      & a{
+        color: $font_color;
+        text-decoration: none;
+      }
       &__group--name{
         font-size: 15px;
         margin-bottom: 5px;
